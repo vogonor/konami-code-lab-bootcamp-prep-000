@@ -11,14 +11,6 @@ const codes = [
   "a"
 ];
 let index = 0;
-function init() {
-  let body = document.findElementByTagName("body");
-  body.addEventListener("keydown", function(e){
-      onKeyDownHandler(e);
-  });
-}
-
-
 
 function onKeyDownHandler(e) {
   const key = e.key;
@@ -34,6 +26,13 @@ function onKeyDownHandler(e) {
   } else {
     index = 0;
   }
+}
+
+function init() {
+  let body = document.findElementByTagName("body");
+  body.addEventListener("keydown", function(e){
+      onKeyDownHandler(e);
+  });
 }
 
 
