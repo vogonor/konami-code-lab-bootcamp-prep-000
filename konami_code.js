@@ -17,3 +17,5 @@ function init() {
     console.log(e.key);
   });
 }
+
+let index = 0;
