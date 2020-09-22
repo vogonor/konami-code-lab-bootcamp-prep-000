@@ -10,7 +10,7 @@ const codes = [
   "b",
   "a"
 ];
-
+let index = 0;
 function init() {
   let body = document.findElementByTagName("body");
   body.addEventListener("keydown", function(e){
@@ -18,7 +18,7 @@ function init() {
   });
 }
 
-let index = 0;
+
 
 function onKeyDownHandler(e) {
   const key = e.key;
