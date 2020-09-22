@@ -14,7 +14,7 @@ let index = 0;
 function init() {
   let body = document.findElementByTagName("body");
   body.addEventListener("keydown", function(e){
-    console.log(e.key);
+      onKeyDownHandler(e);
   });
 }
 
